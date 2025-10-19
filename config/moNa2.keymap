@@ -100,10 +100,10 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
-&trans  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6                  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
-&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0    &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
-&trans  &trans  &trans        &trans        &trans        &trans          &trans  &kp KP_NUMBER_0                                            &trans
+&trans  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                                 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
+&trans  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6                  &trans         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
+&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0    &trans         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
+&trans  &trans  &trans        &trans        &trans        &trans          &kp LS(ENTER)  &kp KP_NUMBER_0                                            &trans
             >;
 
             sensor-bindings = <&Volume>;
@@ -111,10 +111,10 @@
 
         layer_3 {
             bindings = <
-&kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)                    &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)
-&trans            &trans            &trans            &trans            &trans                      &trans  &trans            &trans            &trans            &trans            &trans
-&trans            &trans            &trans            &trans            &trans            &trans    &trans  &trans            &trans            &trans            &trans            &trans
-&trans            &trans            &trans            &trans            &trans            &trans    &trans  &trans                                                                  &trans
+&kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)                           &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)
+&trans            &trans            &trans            &trans            &trans                      &trans         &trans            &trans            &trans            &trans            &trans
+&trans            &trans            &trans            &trans            &trans            &trans    &trans         &trans            &trans            &trans            &trans            &trans
+&trans            &trans            &trans            &trans            &trans            &trans    &kp LG(ENTER)  &trans                                                                  &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
