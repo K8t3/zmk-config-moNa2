@@ -53,6 +53,13 @@
 
             tap-ms = <20>;
         };
+
+        Volume: new_behavior {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "NEW_BEHAVIOR";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
+        };
     };
 
     keymap {
@@ -79,7 +86,7 @@
 &mail               &pw3               &pw2            &trans             &trans               &trans    &kp BACKSPACE  &kp LANG2                                                         &kp F12
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&Volume>;
         };
 
         layer_2 {
@@ -95,10 +102,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)                    &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)
+&trans            &trans            &trans            &trans            &trans                      &trans  &trans            &trans            &trans            &trans            &trans
+&trans            &trans            &trans            &trans            &trans            &trans    &trans  &trans            &trans            &trans            &trans            &trans
+&trans            &trans            &trans            &trans            &trans            &trans    &trans  &trans                                                                  &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
