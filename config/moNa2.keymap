@@ -60,6 +60,13 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
         };
+
+        scroll_left_right: scroll_left_right {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "SCROLL_LEFT_RIGHT";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+        };
     };
 
     keymap {
@@ -86,7 +93,7 @@
 &mail               &pw3               &pw2            &trans             &trans               &trans    &kp BACKSPACE  &kp LANG2                                                         &kp F12
             >;
 
-            sensor-bindings = <&Volume>;
+            sensor-bindings = <&scroll_left_right>;
         };
 
         layer_2 {
@@ -97,7 +104,7 @@
 &trans  &trans  &trans        &trans        &trans        &trans          &trans  &kp KP_NUMBER_0                                            &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&Volume>;
         };
 
         layer_3 {
