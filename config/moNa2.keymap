@@ -61,11 +61,13 @@
             bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
         };
 
-        scroll_left_right: scroll_left_right {
+        scroll_left_right: behavior_sensor_rotate_mouse_wh {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "SCROLL_LEFT_RIGHT";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+
+            tap-ms = <20>;
+            label = "scroLL_left_right";
         };
     };
 
