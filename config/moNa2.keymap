@@ -89,7 +89,7 @@
 
         layer_1 {
             bindings = <
-&kp EXCLAMATION     &kp AT_SIGN        &kp UP_ARROW    &kp HASH           &kp PERCENT                                   &kp LCTRL     &kp AMPERSAND  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp EXCLAMATION     &kp AT             &kp UP_ARROW    &kp HASH           &kp PERCENT                                   &kp LCTRL     &kp AMPERSAND  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp LG(LEFT_ARROW)  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp LG(RIGHT_ARROW)            &trans         &kp SLASH     &trans         &kp COMMA      &kp PERIOD            &kp LS(LG(LESS_THAN))
 &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp PIPE        &kp DOUBLE_QUOTES  &kp SQT              &trans    &trans         &kp QUESTION  &trans         &kp SEMICOLON  &kp COLON             &kp LS(LG(GREATER_THAN))
 &mail               &pw3               &pw2            &trans             &trans               &trans    &kp BACKSPACE  &kp LANG2                                                         &kp F12
