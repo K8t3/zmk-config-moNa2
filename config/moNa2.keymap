@@ -33,7 +33,7 @@
         pw3: pw3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(Q) &kp U &kp A &kp R &kp T &kp E &kp T &kp NUMBER_0 &kp NUMBER_3 &kp NUMBER_1 &kp NUMBER_3 &kp EXCLAMATION>;
+            bindings = <&kp LS(Q) &kp U &kp A &kp R &kp T &kp E &kp T &kp T &kp O &kp NUMBER_0 &kp NUMBER_3 &kp NUMBER_1 &kp NUMBER_3 &kp EXCLAMATION>;
             label = "PW3";
         };
 
